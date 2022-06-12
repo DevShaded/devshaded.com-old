@@ -1,15 +1,7 @@
-<template>
-    <h1 class="text-3xl font-bold underline">
-        devshaded.com
-    </h1>
-</template>
-
-<script>
-export default {
-    name: "Index"
-}
+<script setup>
+import DefaultLayout from "@/Layouts/DefaultLayout";
 </script>
 
-<style scoped>
-
-</style>
+<template>
+    <DefaultLayout></DefaultLayout>
+</template>
