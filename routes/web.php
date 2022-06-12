@@ -17,3 +17,5 @@ use Inertia\Inertia;
 Route::get('/', function () {
     return Inertia::render('Index');
 });
+
+Route::get('/about', \App\Http\Controllers\AboutController::class);
