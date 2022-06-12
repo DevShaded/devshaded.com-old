@@ -20,14 +20,14 @@ defineProps({
         <meta property="og:url" :content="`https://devshaded.com${url}`">
         <meta property="og:title" :content="`${title} - DevShaded`">
         <meta property="og:description" :content="content">
-        <meta property="og:image" content="https://devshaded.com/images/logo.svg">
+        <meta property="og:image" content="/favicons/android-chrome-512x512.png">
 
         <meta name="twitter:domain" content="https://devshaded.com">
         <meta name="twitter:card" content="summary">
         <meta name="twitter:url" :content="`https://devshaded.com${url}`">
         <meta name="twitter:title" :content="`${title} - DevShaded`">
         <meta name="twitter:description" :content="content">
-        <meta name="twitter:image" content="https://devshaded.com/images/logo.svg">
+        <meta name="twitter:image" content="/favicons/android-chrome-512x512.png">
     </Head>
 
     <div class="min-h-screen bg-gray-900">

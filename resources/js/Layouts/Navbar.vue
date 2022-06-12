@@ -12,11 +12,11 @@ import ResponsiveNavLink from '@/Components/ResponsiveNavLink'
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
                         <a href="/">
-                            <img class="block lg:hidden h-12 w-auto" src="/images/logo.svg" alt="DevShaded"/>
+                            <img class="block lg:hidden h-12 w-auto" src="/images/logo.png" alt="DevShaded"/>
                         </a>
 
                         <a href="/">
-                            <img class="hidden lg:block h-12 w-auto" src="/images/logo.svg" alt="DevShaded"/>
+                            <img class="hidden lg:block h-12 w-auto" src="/images/logo.png" alt="DevShaded"/>
                         </a>
                     </div>
                     <div class="hidden sm:block sm:ml-6">

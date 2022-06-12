@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="msapplication-config" content="{{ asset('favicons/browserconfig.xml') }}">
-        <meta name="theme-color" content="#1f2937">
+        <meta name="theme-color" content="#feac10">
 
         {{-- Favicons --}}
         <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicons/apple-touch-icon.png') }}">
