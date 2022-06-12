@@ -68,7 +68,7 @@ import { Link } from "@inertiajs/inertia-vue3";
                     </p>
 
                     <div class="mx-auto md:mx-0">
-                        <Link to="/about" class="inline-flex items-center px-4 py-2 border border-transparent text-base text-center font-medium rounded-md shadow-sm text-white w-40 bg-blue-700 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        <Link href="/about" class="inline-flex items-center px-4 py-2 border border-transparent text-base text-center font-medium rounded-md shadow-sm text-white w-40 bg-blue-700 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                             More about me
                         </Link>
                     </div>
@@ -115,7 +115,7 @@ import { Link } from "@inertiajs/inertia-vue3";
                 <p class="text-center text-gray-400 py-2 md:text-xl">Here are some of my projects I have made!</p>
 
                 <div class="text-center mt-5">
-                    <Link to="/projects" class="inline-flex items-center px-4 py-2 border border-transparent text-base text-center font-medium rounded-md shadow-sm text-white w-52 bg-blue-700 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    <Link href="/projects" class="inline-flex items-center px-4 py-2 border border-transparent text-base text-center font-medium rounded-md shadow-sm text-white w-52 bg-blue-700 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                         View more of my projects
                     </Link>
                 </div>

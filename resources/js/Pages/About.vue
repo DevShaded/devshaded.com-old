@@ -63,6 +63,27 @@ defineProps({
             </div>
         </section>
 
+        <div class="max-w-7xl mx-auto rounded-md">
+            <div class="max-w-xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+                <h2 id="faq-heading" class="text-2xl font-extrabold tracking-tight text-white text-left">Some tools I use <span class="text-blue-500">Myself</span></h2>
+                <div
+                    class="max-w-xl grid gap-y-10 grid-cols-4 md:grid-cols-10 text-gray-400 text-4xl py-7">
+                    <div><i class="fab fa-bootstrap text-bootstrap"></i></div>
+                    <div><i class="fab fa-cloudflare text-cloudflare"></i></div>
+                    <div><i class="fab fa-github text-white"></i></div>
+                    <div><i class="fa-brands fa-gitlab text-gitlab"></i></div>
+                    <div><i class="fab fa-git text-git"></i></div>
+                    <div><i class="fab fa-laravel text-laravel"></i></div>
+                    <div><i class="fab fa-linux text-linux"></i></div>
+                    <div><i class="fab fa-node-js text-nodejs"></i></div>
+                    <div><i class="fab fa-npm text-npm"></i></div>
+                    <div><i class="fab fa-trello text-trello"></i></div>
+                    <div><i class="fab fa-vuejs text-vuejs"></i></div>
+                    <div><i class="fa-brands fa-discord text-discord"></i></div>
+                </div>
+            </div>
+        </div>
+
         <svg class="hidden lg:block" id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 300"
              xmlns="http://www.w3.org/2000/svg">
             <defs>

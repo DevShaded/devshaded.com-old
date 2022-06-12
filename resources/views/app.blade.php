@@ -26,6 +26,7 @@
 
         {{-- Scripts --}}
         <script src="{{ mix('/js/app.js') }}" defer></script>
+        <script src="https://kit.fontawesome.com/566002e451.js" crossorigin="anonymous"></script>
         @inertiaHead
     </head>
     <body class="bg-gray-900 antialiased">
