@@ -19,3 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/about', \App\Http\Controllers\AboutController::class);
+
+Route::get('/contact', function () {
+    return Inertia::render('Contact');
+});
