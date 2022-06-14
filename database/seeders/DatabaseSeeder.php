@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Http;
 
 class DatabaseSeeder extends Seeder
 {
@@ -48,5 +48,19 @@ class DatabaseSeeder extends Seeder
                 'answer'   => 'That\'s a hard question since I like a lot of food/dishes. But, I would say tacos is my favorite dish. I only eat it once a week, but it is one of the meals I am most excited about when it\'s dinner time.'
             ],
         ]);
+
+        $responses = Http::get('https://api.github.com/users/DevShaded/repos');
+        $responses = json_decode($responses);
+
+        foreach ($responses as $response) {
+            DB::table('repositories')->updateOrInsert([
+                'github_id'   => $response->id,
+                'name'        => $response->full_name,
+                'url'         => $response->html_url,
+                'description' => $response->description,
+                'language'    => $response->language ?? null
+            ]);
+        }
+
     }
 }
