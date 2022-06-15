@@ -25,3 +25,9 @@ Route::get('/contact', function () {
 });
 
 Route::get('/projects', [\App\Http\Controllers\ProjectsController::class, 'index']);
+
+Route::prefix('/bobwatts')->group(function () {
+    Route::get('/', function() {
+        return Inertia::render('BobWatts/Index');
+    });
+});
