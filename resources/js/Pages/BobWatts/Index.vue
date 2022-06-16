@@ -25,7 +25,7 @@ import SvgWaveDown from "@/Components/SvgWaveDown";
                     class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
                     <div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
                         <span class="sr-only">Watch our video to learn more</span>
-                        <img class="w-full rounded-xl" src="/images/BobWatts/BobWattsLogo.png" alt="Bob Watts"/>
+                        <img class="w-full rounded-xl" src="/images/bobwatts/BobWattsLogo.png" alt="Bob Watts"/>
                     </div>
                 </div>
             </div>
@@ -37,7 +37,7 @@ import SvgWaveDown from "@/Components/SvgWaveDown";
         <section class="max-w-7xl mx-auto my-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mx-5">
                 <div>
-                    <h2>
+                    <h2 class="">
                         <span class="mt-1 block text-4xl tracking-tight font-extrabold">
                             <span class="block text-gray-200">Customize Bob Watts to your needs</span>
                       </span>
@@ -46,7 +46,7 @@ import SvgWaveDown from "@/Components/SvgWaveDown";
                 </div>
 
                 <div>
-                    <img class="rounded-xl shadow-xl" src="/images/BobWatts/CommandSet.png" alt="Commands list"/>
+                    <img class="rounded-xl shadow-xl" src="/images/bobwatts/CommandSet.png" alt="Commands list"/>
                 </div>
             </div>
         </section>
@@ -87,7 +87,7 @@ import SvgWaveDown from "@/Components/SvgWaveDown";
                 </div>
 
                 <div>
-                    <img class="rounded-xl shadow-xl" src="/images/BobWatts/UserInfoCommand.png" alt="User info command"/>
+                    <img class="rounded-xl shadow-xl" src="/images/bobwatts/UserInfoCommand.png" alt="User info command"/>
                 </div>
             </div>
         </section>
@@ -110,7 +110,7 @@ import SvgWaveDown from "@/Components/SvgWaveDown";
                 </div>
 
                 <div>
-                    <img class="rounded-xl shadow-xl" src="/images/BobWatts/ServerInfoCommand.png" alt="Server info command"/>
+                    <img class="rounded-xl shadow-xl" src="/images/bobwatts/ServerInfoCommand.png" alt="Server info command"/>
                 </div>
             </div>
         </section>
