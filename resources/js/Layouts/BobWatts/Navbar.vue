@@ -11,22 +11,19 @@ import ResponsiveNavLink from '@/Components/ResponsiveNavLink'
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
-                        <a href="/">
-                            <img class="block lg:hidden h-12 w-auto" src="/images/logo.png" alt="DevShaded"/>
+                        <a href="/bobwatts">
+                            <img class="block lg:hidden h-12 w-auto" src="/images/bobwatts/BobWattsLogoRounded.png" alt="Bob Watts"/>
                         </a>
 
-                        <a href="/">
-                            <img class="hidden lg:block h-12 w-auto" src="/images/logo.png" alt="DevShaded"/>
+                        <a href="/bobwatts">
+                            <img class="hidden lg:block h-12 w-auto" src="/images/bobwatts/BobWattsLogoRounded.png" alt="Bob Watts"/>
                         </a>
                     </div>
                     <div class="hidden sm:block sm:ml-6">
                         <div class="flex space-x-4">
-                            <NavLink :href="'/'" :active="$page.url === '/'">Home</NavLink>
-                            <NavLink :href="'/about'" :active="$page.url === '/about'">About me</NavLink>
-                            <NavLink :href="'/contact'" :active="$page.url === '/contact'">Contact me</NavLink>
-                            <NavLink :href="'/projects'" :active="$page.url === '/projects'">My Projects</NavLink>
-                            <a class="bg-blue-600 text-white hover:bg-blue-700 hover:text-white px-3 py-2 z-10 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out"
-                               href="/bobwatts">Bob Watts</a>
+                            <NavLink :href="'/bobwatts'" :active="$page.url === '/bobwatts'">Home</NavLink>
+                            <NavLink :href="'/bobwatts/commands'" :active="$page.url === '/bobwatts/commands'">Commands</NavLink>
+                            <NavLink :href="'/bobwatts/faq'" :active="$page.url === '/bobwatts/faq'">FAQs</NavLink>
                         </div>
                     </div>
                 </div>
@@ -50,14 +47,9 @@ import ResponsiveNavLink from '@/Components/ResponsiveNavLink'
                     leave-to-class="transform opacity-0 scale-95">
             <DisclosurePanel class="sm:hidden">
                 <div class="px-2 pt-2 pb-3 space-y-1">
-                    <ResponsiveNavLink :href="'/'" :active="$page.url === '/'">Home</ResponsiveNavLink>
-                    <ResponsiveNavLink :href="'/about'" :active="$page.url === '/about'">About me</ResponsiveNavLink>
-                    <ResponsiveNavLink :href="'/contact'" :active="$page.url === '/contact'">Contact me
-                    </ResponsiveNavLink>
-                    <ResponsiveNavLink :href="'/projects'" :active="$page.url === '/projects'">My projects
-                    </ResponsiveNavLink>
-                    <a class="bg-blue-600 text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium"
-                       href="/bobwatts">Bob Watts</a>
+                    <ResponsiveNavLink :href="'/bobwatts'" :active="$page.url === '/bobwatts'">Home</ResponsiveNavLink>
+                    <ResponsiveNavLink :href="'/bobwatts/commands'" :active="$page.url === '/bobwatts/commands'">Commands</ResponsiveNavLink>
+                    <ResponsiveNavLink :href="'/bobwatts/faq'" :active="$page.url === '/bobwatts/faq'">FAQs</ResponsiveNavLink>
                 </div>
             </DisclosurePanel>
         </transition>

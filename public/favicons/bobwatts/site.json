@@ -1,0 +1,21 @@
+{
+    "name": "Bob Watts",
+    "short_name": "BW",
+    "description": "Bob Watts is a multipurpose bot that does many things, from Fun and Informative commands to Moderation and Logging commands!",
+    "start_url": "/bobwatts",
+    "icons": [
+        {
+            "src": "/favicons/bobwatts/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicons/bobwatts/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#1f2937",
+    "background_color": "#111827",
+    "display": "standalone"
+}
