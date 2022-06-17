@@ -4,7 +4,7 @@
         {{-- Meta Tags --}}
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
-        @if(Route::current()->uri == 'bobwatts')
+        @if(str_contains(Route::current()->uri, 'bobwatts') == 'bobwatts')
             <meta name="msapplication-TileColor" content="#da532c">
             <meta name="msapplication-config" content="{{ asset('favicons/bobwatts/browserconfig.xml') }}">
             <meta name="theme-color" content="#ffffff">
@@ -15,7 +15,7 @@
         @endif
 
         {{-- Favicons --}}
-        @if(Route::current()->uri == 'bobwatts')
+        @if(str_contains(Route::current()->uri, 'bobwatts') == 'bobwatts')
             <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicons/bobwatts/apple-touch-icon.png') }}">
             <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicons/bobwatts/favicon-32x32.png') }}">
             <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicons/bobwatts/favicon-16x16.png') }}">
