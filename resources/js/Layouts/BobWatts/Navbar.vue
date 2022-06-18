@@ -23,7 +23,8 @@ import ResponsiveNavLink from '@/Components/ResponsiveNavLink'
                         <div class="flex space-x-4">
                             <NavLink :href="'/bobwatts'" :active="$page.url === '/bobwatts'">Home</NavLink>
                             <NavLink :href="'/bobwatts/commands'" :active="$page.url === '/bobwatts/commands'">Commands</NavLink>
-                            <NavLink :href="'/bobwatts/faq'" :active="$page.url === '/bobwatts/faq'">FAQs</NavLink>
+                            <a class="bg-blue-600 text-white hover:bg-blue-700 hover:text-white px-3 py-2 z-10 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out"
+                               href="/bobwatts/invite">Invite me!</a>
                         </div>
                     </div>
                 </div>
@@ -50,6 +51,8 @@ import ResponsiveNavLink from '@/Components/ResponsiveNavLink'
                     <ResponsiveNavLink :href="'/bobwatts'" :active="$page.url === '/bobwatts'">Home</ResponsiveNavLink>
                     <ResponsiveNavLink :href="'/bobwatts/commands'" :active="$page.url === '/bobwatts/commands'">Commands</ResponsiveNavLink>
                     <ResponsiveNavLink :href="'/bobwatts/faq'" :active="$page.url === '/bobwatts/faq'">FAQs</ResponsiveNavLink>
+                    <a class="bg-blue-600 text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium"
+                       href="/bobwatts/invite">Invite me!</a>
                 </div>
             </DisclosurePanel>
         </transition>
