@@ -32,4 +32,5 @@ Route::prefix('/bobwatts')->group(function () {
     });
 
     Route::get('/commands', [\App\Http\Controllers\BobWatts\CommandsController::class, 'index']);
+    Route::permanentRedirect('/invite', 'https://discord.com/api/oauth2/authorize?client_id=661979662997782541&permissions=8&scope=bot%20applications.commands');
 });
