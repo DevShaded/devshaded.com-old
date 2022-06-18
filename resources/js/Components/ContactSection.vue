@@ -10,7 +10,7 @@
                             <dl class="mt-2 text-base text-gray-500">
                                 <div>
                                     <dt class="sr-only">Email</dt>
-                                    <dd>devshaded@devshaded.com</dd>
+                                    <dd>devshaded at devshaded dot com</dd>
                                 </div>
                             </dl>
                         </div>
