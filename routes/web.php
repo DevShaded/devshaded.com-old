@@ -30,4 +30,6 @@ Route::prefix('/bobwatts')->group(function () {
     Route::get('/', function() {
         return Inertia::render('BobWatts/Index');
     });
+
+    Route::get('/commands', [\App\Http\Controllers\BobWatts\CommandsController::class, 'index']);
 });
