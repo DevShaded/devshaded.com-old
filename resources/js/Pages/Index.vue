@@ -78,7 +78,7 @@ import { Link } from "@inertiajs/inertia-vue3";
                     <div>
                         <span class="sr-only">Selfie of Fredrik playing Golf</span>
                         <img
-                            src="/images/selfie.jpg"
+                            src="/images/selfie.webp"
                             alt="Selfie of Fredrik playing Golf"
                             class="object-contain w-80 md:w-96 rounded-md"
                         />
