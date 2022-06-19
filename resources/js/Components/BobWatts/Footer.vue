@@ -4,8 +4,8 @@ import { Link } from "@inertiajs/inertia-vue3";
 
 const navigation = {
     main:   [
+        { name: 'Home', href: '/bobwatts/' },
         { name: 'Commands', href: '/bobwatts/commands' },
-        { name: 'FAQs', href: '/bobwatts/faq' },
     ],
     social: [
         {
