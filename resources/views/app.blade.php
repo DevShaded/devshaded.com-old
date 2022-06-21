@@ -22,6 +22,18 @@
             <link rel="manifest" href="{{ asset('favicons/bobwatts/site.json') }}">
             <link rel="mask-icon" href="{{ asset('favicons/bobwatts/safari-pinned-tab.svg') }}" color="#1f2937">
             <link rel="shortcut icon" href="{{ asset('favicons/bobwatts/favicon.ico') }}">
+
+            @production
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-7KFLKPB9HC"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-7KFLKPB9HC');
+                </script>
+            @endproduction
         @else
             <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicons/apple-touch-icon.png') }}">
             <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicons/favicon-32x32.png') }}">
@@ -29,6 +41,18 @@
             <link rel="manifest" href="{{ asset('favicons/site.json') }}">
             <link rel="mask-icon" href="{{ asset('favicons/safari-pinned-tab.svg') }}" color="#1f2937">
             <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+
+            @production
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-8WQ9K14MBC"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-8WQ9K14MBC');
+                </script>
+            @endproduction
         @endif
 
         {{-- Fonts --}}
