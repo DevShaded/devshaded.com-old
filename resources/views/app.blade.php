@@ -61,10 +61,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
         {{-- Styles --}}
-        <link href="{{ mix('/css/app.css') }}" rel="stylesheet" />
+        @vite('resources/css/app.css')
 
         {{-- Scripts --}}
-        <script src="{{ mix('/js/app.js') }}" defer></script>
+        @vite('resources/js/app.js')
         <script src="https://kit.fontawesome.com/566002e451.js" crossorigin="anonymous"></script>
         @inertiaHead
     </head>
