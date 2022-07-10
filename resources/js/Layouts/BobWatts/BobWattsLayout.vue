@@ -1,6 +1,6 @@
 <script setup>
-import Navbar from '@/Layouts/BobWatts/Navbar';
-import Footer from "@/Components/BobWatts/Footer";
+import Navbar from '@/Layouts/BobWatts/Navbar.vue';
+import Footer from "@/Components/BobWatts/Footer.vue";
 import { Head } from "@inertiajs/inertia-vue3";
 
 defineProps({

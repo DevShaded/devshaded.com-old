@@ -1,8 +1,8 @@
 <script setup>
-import Navbar from '@/Layouts/Navbar';
-import Footer from "@/Components/Footer";
-import SvgWaveDown from '@/Components/SvgWaveDown'
-import SvgWaveUp from '@/Components/SvgWaveUp'
+import Navbar from '@/Layouts/Navbar.vue';
+import Footer from "@/Components/Footer.vue";
+import SvgWaveDown from '@/Components/SvgWaveDown.vue'
+import SvgWaveUp from '@/Components/SvgWaveUp.vue'
 import { Head } from "@inertiajs/inertia-vue3";
 
 defineProps({

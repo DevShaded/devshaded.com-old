@@ -1,6 +1,6 @@
 <script setup>
-import DefaultLayout from "@/Layouts/DefaultLayout";
-import PrimaryButton from '@/Components/PrimaryButton'
+import DefaultLayout from "@/Layouts/DefaultLayout.vue";
+import PrimaryButton from '@/Components/PrimaryButton.vue'
 import { Link } from "@inertiajs/inertia-vue3";
 </script>
 
@@ -78,7 +78,7 @@ import { Link } from "@inertiajs/inertia-vue3";
                     <div>
                         <span class="sr-only">Selfie of Fredrik playing Golf</span>
                         <img
-                            src="/images/selfie.webp"
+                            src="../images/selfie.webp"
                             alt="Selfie of Fredrik playing Golf"
                             class="object-contain w-80 md:w-96 rounded-md"
                         />
@@ -126,7 +126,7 @@ import { Link } from "@inertiajs/inertia-vue3";
                 <div class="grid grid-cols-1 gap-y-8 content-center px-6 sm:gap-x-6 xl:gap-x-8">
                     <div class="relative mb-10 shadow-xl">
                         <div class="bg-gray-700 rounded-b-md">
-                            <img src="https://cdn.discordapp.com/attachments/566689366643310613/968484158500401212/unknown.png" alt="">
+                            <img src="../images/fortnitestatstrackerxyz.webp" alt="">
 
                             <div class="px-3 py-4">
                                 <h3 class="text-white text-2xl font-medium">Fortnite Stats Tracker</h3>
