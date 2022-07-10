@@ -1,13 +1,10 @@
 {
     "private": true,
     "scripts": {
-        "dev": "npm run development",
         "development": "mix && mix --mix-config=webpack.ssr.mix.js",
-        "watch": "mix watch",
-        "watch-poll": "mix watch -- --watch-options-poll=1000",
-        "hot": "mix watch --hot",
-        "prod": "npm run production",
-        "production": "mix --production && mix --production --mix-config=webpack.ssr.mix.js"
+        "production": "mix --production && mix --production --mix-config=webpack.ssr.mix.js",
+        "dev": "vite",
+        "build": "vite build"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.7",
