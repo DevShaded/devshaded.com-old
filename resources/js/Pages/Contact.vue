@@ -1,6 +1,6 @@
 <script setup>
-import DefaultLayout from '@/Layouts/DefaultLayout'
-import ContactSection from "@/Components/ContactSection";
+import DefaultLayout from '@/Layouts/DefaultLayout.vue'
+import ContactSection from "@/Components/ContactSection.vue";
 </script>
 
 <template>

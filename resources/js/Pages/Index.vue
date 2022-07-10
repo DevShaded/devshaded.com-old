@@ -1,6 +1,6 @@
 <script setup>
-import DefaultLayout from "@/Layouts/DefaultLayout";
-import PrimaryButton from '@/Components/PrimaryButton'
+import DefaultLayout from "@/Layouts/DefaultLayout.vue";
+import PrimaryButton from '@/Components/PrimaryButton.vue'
 import { Link } from "@inertiajs/inertia-vue3";
 </script>
 

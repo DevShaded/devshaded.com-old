@@ -1,7 +1,7 @@
 <script setup>
-import BobWattsLayout from '@/Layouts/BobWatts/BobWattsLayout'
-import PrimaryButton from "@/Components/PrimaryButton";
-import SvgWaveDown from "@/Components/SvgWaveDown";
+import BobWattsLayout from '@/Layouts/BobWatts/BobWattsLayout.vue'
+import PrimaryButton from "@/Components/PrimaryButton.vue";
+import SvgWaveDown from "@/Components/SvgWaveDown.vue";
 </script>
 
 <template>

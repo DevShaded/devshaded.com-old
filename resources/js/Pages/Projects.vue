@@ -1,5 +1,5 @@
 <script setup>
-import DefaultLayout from "@/Layouts/DefaultLayout";
+import DefaultLayout from "@/Layouts/DefaultLayout.vue";
 
 defineProps({
     repositories: Object

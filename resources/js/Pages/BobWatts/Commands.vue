@@ -1,5 +1,5 @@
 <script setup>
-import BobWattsLayout from '@/Layouts/BobWatts/BobWattsLayout'
+import BobWattsLayout from '@/Layouts/BobWatts/BobWattsLayout.vue'
 import { Menu, MenuButton, MenuItem, MenuItems, Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 import { ChevronDownIcon } from '@heroicons/vue/solid'
 </script>
