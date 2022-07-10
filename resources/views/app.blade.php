@@ -60,12 +60,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        {{-- Styles --}}
-        <link href="{{ mix('/css/app.css') }}" rel="stylesheet" />
-
         {{-- Scripts --}}
-        <script src="{{ mix('/js/app.js') }}" defer></script>
         <script src="https://kit.fontawesome.com/566002e451.js" crossorigin="anonymous"></script>
+        @vite('resources/js/app.js')
         @inertiaHead
     </head>
     <body class="bg-gray-900 antialiased">

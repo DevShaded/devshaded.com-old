@@ -1,8 +1,8 @@
 <script setup>
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 import { MenuIcon, XIcon } from '@heroicons/vue/outline'
-import NavLink from '@/Components/NavLink'
-import ResponsiveNavLink from '@/Components/ResponsiveNavLink'
+import NavLink from '@/Components/NavLink.vue'
+import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue'
 </script>
 
 <template>
@@ -12,11 +12,11 @@ import ResponsiveNavLink from '@/Components/ResponsiveNavLink'
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
                         <a href="/bobwatts">
-                            <img class="block lg:hidden h-12 w-auto" src="/images/bobwatts/BobWattsLogoRounded.webp" alt="Bob Watts"/>
+                            <img class="block lg:hidden h-12 w-auto" src="../../images/bobwatts/BobWattsLogoRounded.webp" alt="Bob Watts"/>
                         </a>
 
                         <a href="/bobwatts">
-                            <img class="hidden lg:block h-12 w-auto" src="/images/bobwatts/BobWattsLogoRounded.webp" alt="Bob Watts"/>
+                            <img class="hidden lg:block h-12 w-auto" src="../../images/bobwatts/BobWattsLogoRounded.webp" alt="Bob Watts"/>
                         </a>
                     </div>
                     <div class="hidden sm:block sm:ml-6">
