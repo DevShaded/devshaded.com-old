@@ -1,10 +1,8 @@
 {
     "private": true,
     "scripts": {
-        "development": "mix && mix --mix-config=webpack.ssr.mix.js",
-        "production": "mix --production && mix --production --mix-config=webpack.ssr.mix.js",
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build && vite build --ssr"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.7",
@@ -26,7 +24,6 @@
         "@vue/server-renderer": "^3.2.37",
         "vue": "^3.2.36",
         "vue-loader": "^17.0.0",
-        "webpack-node-externals": "^3.0.0",
         "@vitejs/plugin-vue": "^2.3.3"
     }
 }

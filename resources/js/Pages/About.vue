@@ -116,8 +116,8 @@ defineProps({
                     <p class="my-4 max-w-md mx-auto text-base text-gray-400 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">Some pictures of myself!</p>
                 </div>
                 <div class="flex flex-wrap -mx-4">
-                    <div class="md:w-1/2 md:h-1/5 px-4 mb-8 md:mb-0"><img class="rounded shadow-md" src="/images/chair.webp" alt="Fredrik sitting in chair"></div>
-                    <div class="md:w-1/2 md:h-1/5 px-4 mb-8 md:mb-0"><img class="rounded shadow-md" src="/images/handsome.webp" alt="Fredrik handsome selfie"></div>
+                    <div class="md:w-1/2 md:h-1/5 px-4 mb-8 md:mb-0"><img class="rounded shadow-md" src="../images/chair.webp" alt="Fredrik sitting in chair"></div>
+                    <div class="md:w-1/2 md:h-1/5 px-4 mb-8 md:mb-0"><img class="rounded shadow-md" src="../images/handsome.webp" alt="Fredrik handsome selfie"></div>
                 </div>
             </div>
         </section>

@@ -25,7 +25,7 @@ import SvgWaveDown from "@/Components/SvgWaveDown.vue";
                     class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
                     <div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
                         <span class="sr-only">Watch our video to learn more</span>
-                        <img class="w-full rounded-xl" src="/images/bobwatts/BobWattsLogo.webp" alt="Bob Watts"/>
+                        <img class="w-full rounded-xl" src="../../images/bobwatts/BobWattsLogo.webp" alt="Bob Watts"/>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@ import SvgWaveDown from "@/Components/SvgWaveDown.vue";
                 </div>
 
                 <div>
-                    <img class="rounded-xl shadow-xl" src="/images/bobwatts/CommandSet.webp" alt="Commands list"/>
+                    <img class="rounded-xl shadow-xl" src="../../images/bobwatts/CommandSet.webp" alt="Commands list"/>
                 </div>
             </div>
         </section>
@@ -87,7 +87,7 @@ import SvgWaveDown from "@/Components/SvgWaveDown.vue";
                 </div>
 
                 <div>
-                    <img class="rounded-xl shadow-xl" src="/images/bobwatts/UserInfoCommand.webp" alt="User info command"/>
+                    <img class="rounded-xl shadow-xl" src="../../images/bobwatts/UserInfoCommand.webp" alt="User info command"/>
                 </div>
             </div>
         </section>
@@ -110,7 +110,7 @@ import SvgWaveDown from "@/Components/SvgWaveDown.vue";
                 </div>
 
                 <div>
-                    <img class="rounded-xl shadow-xl" src="/images/bobwatts/ServerInfoCommand.webp" alt="Server info command"/>
+                    <img class="rounded-xl shadow-xl" src="../../images/bobwatts/ServerInfoCommand.webp" alt="Server info command"/>
                 </div>
             </div>
         </section>
