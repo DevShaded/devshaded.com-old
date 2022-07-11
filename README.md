@@ -44,7 +44,8 @@ php artisan migrate
 php artisan db:seed
 ```
 
-### Running the application (PRODUCTION)
+## Running the application
+### PRODUCTION
 To run the application in production mode, run the following commands:
 ```bash
 npm run build
@@ -59,7 +60,7 @@ Or we can use this command instead with `pm2`:
 pm2 start /storage/ssr/ssr.js --watch
 ```
 
-### Running the application (DEVELOPMENT)
+### DEVELOPMENT
 To run the application in development mode, run the following commands:
 ```bash
 npm run build
