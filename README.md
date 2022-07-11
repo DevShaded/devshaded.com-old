@@ -1,64 +1,82 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<p><a href="https://devshaded.com" target="_blank"><img src="./docs/images/logo.png" width="200"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## About DevShaded.com
+This project is the official portfolio for [DevShaded](https://github.com/DevShaded). This project has a collection of useful things to know about DevShaded. It also has project's that are related to DevShaded, and it also hosts the official website for my Discord bot [Bob Watts](https://github.com/DevShaded/Bob-Watts).
 
-## About Laravel
+## Setting up the project
+Here is the section on how to set up the project, and run it properly.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Requirements
+This projects requires a few things to have to be installed on your computer.
+```
+MYSQL Server
+Node.js v16x (or higher)
+PM2 (Node Process Manager)
+```
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Installing dependencies
+To install the dependencies, run the following commands:
+```bash
+composer install
+```
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+```bash
+npm install
+```
 
-## Learning Laravel
+### Environment variables
+To set up the environment variables, we need to follow these simple steps:
+1. Copy the contents of the `.env.example`
+2. Create a new file called `.env`, and paste the contents of the `.env.example` into it.
+3. Set up the database information in the `.env` file.
+4. Create a new database with `utf8mb4_unicode_ci` as a collation.
+5. Run `php artisan key:generate` to generate a new session key for the application.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+**Do not ever upload the `.env` file as it contains private credentials.**
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Running the migration files and database seeds
+To run the migration files and database seeds, run the following commands:
+```bash
+php artisan migrate
+```
 
-## Laravel Sponsors
+```bash
+php artisan db:seed
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Running the application
+### PRODUCTION
+To run the application in production mode, run the following commands:
+```bash
+npm run build
+```
 
-### Premium Partners
+Since we are using ssr (server side rendering), we need to run the following command in the background:
+```bash
+node /storage/ssr/ssr.js
+```
+Or we can use this command instead with `pm2`:
+```bash
+pm2 start /storage/ssr/ssr.js --watch
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+### DEVELOPMENT
+To run the application in development mode, run the following commands:
+```bash
+npm run build
+```
 
-## Contributing
+Since we are using ssr (server side rendering), we need to run the following command in the background:
+```bash
+node /storage/ssr/ssr.js
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Then we need to run the dev command:
+```bash
+npm run dev
+```
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+And for the last command we need to run the following command:
+```bash
+php artisan serve
+```
