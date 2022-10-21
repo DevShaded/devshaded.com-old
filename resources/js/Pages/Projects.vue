@@ -4,6 +4,31 @@ import DefaultLayout from "@/Layouts/DefaultLayout.vue";
 defineProps({
     repositories: Object
 })
+
+/**
+ * Change the background color based on the language
+ * The custom colors can be found in the Tailwind config file
+ * If the color does not exist we just default it to the default case
+ *
+ * @param color
+ * @returns {string}
+ */
+function changeLanguageColor(color) {
+    switch (color.toLowerCase()) {
+        case 'vue':
+            return 'bg-vuejs text-gray-50'
+        case 'javascript':
+            return 'bg-javascript text-gray-800'
+        case 'typescript':
+            return 'bg-typescript text-gray-50'
+        case 'html':
+            return 'bg-html text-gray-800'
+        case 'php':
+            return 'bg-php text-gray-800'
+        default:
+            return 'bg-blue-300 text-blue-900'
+    }
+}
 </script>
 
 <template>
@@ -30,7 +55,7 @@ defineProps({
                         <div class="flex-1 truncate">
                             <div class="flex items-center space-x-3">
                                 <h3 class="text-gray-100 text-sm font-medium truncate">{{ repository.name }}</h3>
-                                <span v-if="repository.language" class="flex-shrink-0 inline-block px-2 py-0.5 text-blue-900 text-xs font-medium bg-blue-300 rounded-full">{{ repository.language }}</span>
+                                <span v-if="repository.language" class="flex-shrink-0 inline-block px-2 py-0.5 text-xs font-medium rounded-full" :class="`${changeLanguageColor(repository.language)}`">{{ repository.language }}</span>
                             </div>
                             <p class="mt-1 text-gray-300 text-sm truncate">{{ repository.description ?? 'No description specified' }}</p>
                         </div>
