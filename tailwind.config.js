@@ -23,7 +23,16 @@ module.exports = {
                 'trello':     '#008fe4',
                 'vuejs':      '#42b883',
                 'discord':    '#5865F2',
-            }
+            },
+
+            // Using these background colors for the projects page
+            colors: {
+                'vuejs':      '#41B883',
+                'javascript': '#f0db4f',
+                'typescript': '#007acc',
+                'html':       '#e34c26',
+                'php':        '#777BB3',
+            },
         },
     },
     plugins: [],

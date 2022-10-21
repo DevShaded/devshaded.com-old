@@ -53,13 +53,15 @@ class DatabaseSeeder extends Seeder
         $responses = json_decode($responses);
 
         foreach ($responses as $response) {
-            DB::table('repositories')->updateOrInsert([
-                'github_id'   => $response->id,
-                'name'        => $response->full_name,
-                'url'         => $response->html_url,
-                'description' => $response->description,
-                'language'    => $response->language ?? null
-            ]);
+            if ($response->owner->login == 'DevShaded' && !$response->fork) {
+                DB::table('repositories')->updateOrInsert([
+                    'github_id'   => $response->id,
+                    'name'        => $response->full_name,
+                    'url'         => $response->html_url,
+                    'description' => $response->description,
+                    'language'    => $response->language ?? null
+                ]);
+            }
         }
 
         // Fun commands
