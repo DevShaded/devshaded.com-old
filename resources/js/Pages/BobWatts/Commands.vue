@@ -2,29 +2,26 @@
 import BobWattsLayout from '@/Layouts/BobWatts/BobWattsLayout.vue'
 import { Menu, MenuButton, MenuItem, MenuItems, Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 import { ChevronDownIcon } from '@heroicons/vue/solid'
-</script>
+import { onMounted, ref } from "vue";
 
-<script>
-export default {
-    data() {
-        return {
-            activeItem: 'fun',
-        }
-    },
+defineProps({
+    data: Object
+})
 
-    props: {
-        data: Object
-    },
+const activeItem = ref('fun')
 
-    methods: {
-        isActive(menuItem) {
-            return this.activeItem === menuItem
-        },
-
-        setActive(menuItem) {
-            this.activeItem = menuItem
-        },
+onMounted(() => {
+    return {
+        activeItem
     }
+})
+
+function isActive(menuItem) {
+    return this.activeItem === menuItem
+}
+
+function setActive(menuItem) {
+    this.activeItem = menuItem
 }
 </script>
 
